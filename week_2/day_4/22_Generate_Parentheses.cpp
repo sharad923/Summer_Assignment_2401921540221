@@ -22,6 +22,5 @@ public:
         string temp;
         parentheses(n,0,0,ans,temp);
         return ans;
-        
     }
 };

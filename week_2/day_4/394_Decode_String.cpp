@@ -21,21 +21,17 @@ public:
             else if (ch == ']') {
                 int repeat = counts.top();
                 counts.pop();
-
                 string temp = words.top();
                 words.pop();
-
                 for (int i = 0; i < repeat; i++) {
                     temp += curr;
                 }
-
                 curr = temp;
             }
             else {
                 curr += ch;
             }
         }
-
         return curr;
     }
 };
